@@ -18,17 +18,23 @@ footer {
 }
 
   ul.topnav {
+    display: flex; /* Using flexbox for alignment */
+    justify-content: flex-end; /* Aligns the list to the right */
+    align-items: center; /* Aligns the list vertically */
+    list-style-type: none;
     font-family: "Prompt", sans-serif;
     font-weight: bold;
     list-style-type: none;
     height: auto;
     margin: 0;
-    padding: 10px 0;
+    padding: 0;
     overflow: hidden;
     background-color: rgba(13, 68, 36);
   }
   
-  ul.topnav li {float: right;}
+  ul.topnav li {
+    margin: 0; /* Removes the default margin */
+  }
   
   ul.topnav li a {
     display: block;
@@ -44,8 +50,7 @@ footer {
   
   
   ul.topnav li.logo {
-    float: left;
-    z-index: 1;
+    float: left; /* Float the logo to the left */
   }
   
 
